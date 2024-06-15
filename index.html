@@ -5,20 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrii Zadorozhnii</title>
     <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <script src="./js/bootstrap.js"></script>
+    <style>
+      .rounded-img {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+        padding: 0.6em;
+        margin-bottom: 1em;
+      }
+    </style>
   </head>
   <body>
-    <div class="container text-center">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Favorite places</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container text-center my-5">
       <div class="row">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <img src="./image/me.jpg" alt="Andrii Zadorozhnii" />
-          <h1>Andrii Zadorozhnii</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim fuga
-            hic quos ducimus quisquam ea nulla asperiores, exercitationem
-            mollitia tempora? A quibusdam ipsa, illum iusto quam at sit alias
-            rem.
+          <img
+            src="./image/me.jpg"
+            alt="Andrii Zadorozhnii"
+            class="rounded-img"
+          />
+          <h1 class="fw-light">Andrii Zadorozhnii</h1>
+          <p class="lead text-muted">
+            I am learning HTML course from Bodgan Stashchuk. He is explaining
+            basic level of HTML.
           </p>
-          <button class="btn btn-primary">Like!</button>
+          <a href="https://google.com" target="_blank" class="btn btn-primary">
+            Google!
+          </a>
+          <a href="https://waze.com" target="_blank" class="btn btn-secondary">
+            Waze
+          </a>
         </div>
       </div>
     </div>
